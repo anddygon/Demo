@@ -10,9 +10,9 @@
 		2E765CE17B831C2FB2C15EF7 /* Pods_StackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F188BB04C1651023A1E6D93F /* Pods_StackView.framework */; };
 		E171980A1F25D5DA00A1238D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17198091F25D5DA00A1238D /* AppDelegate.swift */; };
 		E171980C1F25D5DA00A1238D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171980B1F25D5DA00A1238D /* ViewController.swift */; };
-		E171980F1F25D5DA00A1238D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E171980D1F25D5DA00A1238D /* Main.storyboard */; };
 		E17198111F25D5DA00A1238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17198101F25D5DA00A1238D /* Assets.xcassets */; };
 		E17198141F25D5DA00A1238D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17198121F25D5DA00A1238D /* LaunchScreen.storyboard */; };
+		E171981C1F25E8FD00A1238D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171981B1F25E8FD00A1238D /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,10 +21,10 @@
 		E17198061F25D5DA00A1238D /* StackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17198091F25D5DA00A1238D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E171980B1F25D5DA00A1238D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E171980E1F25D5DA00A1238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E17198101F25D5DA00A1238D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17198131F25D5DA00A1238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17198151F25D5DA00A1238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E171981B1F25E8FD00A1238D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		F188BB04C1651023A1E6D93F /* Pods_StackView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 			children = (
 				E17198091F25D5DA00A1238D /* AppDelegate.swift */,
 				E171980B1F25D5DA00A1238D /* ViewController.swift */,
-				E171980D1F25D5DA00A1238D /* Main.storyboard */,
+				E171981B1F25E8FD00A1238D /* BaseViewController.swift */,
 				E17198101F25D5DA00A1238D /* Assets.xcassets */,
 				E17198121F25D5DA00A1238D /* LaunchScreen.storyboard */,
 				E17198151F25D5DA00A1238D /* Info.plist */,
@@ -153,7 +153,6 @@
 			files = (
 				E17198141F25D5DA00A1238D /* LaunchScreen.storyboard in Resources */,
 				E17198111F25D5DA00A1238D /* Assets.xcassets in Resources */,
-				E171980F1F25D5DA00A1238D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +213,13 @@
 			files = (
 				E171980C1F25D5DA00A1238D /* ViewController.swift in Sources */,
 				E171980A1F25D5DA00A1238D /* AppDelegate.swift in Sources */,
+				E171981C1F25E8FD00A1238D /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E171980D1F25D5DA00A1238D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E171980E1F25D5DA00A1238D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E17198121F25D5DA00A1238D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -379,6 +371,7 @@
 				E171981A1F25D5DA00A1238D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

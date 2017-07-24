@@ -8,6 +8,7 @@ target 'StackView' do
   # Pods for StackView
   pod 'OAStackView'
   pod 'SnapKit'
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end
