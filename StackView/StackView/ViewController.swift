@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-import OAStackView
+import FDStackView
 import RxSwift
 import RxCocoa
 
@@ -32,7 +32,7 @@ class ViewController: BaseViewController {
         l2.backgroundColor = .green
         l2.textColor = .white
         
-        let stackView = OAStackView(arrangedSubviews: [l1, l2])
+        let stackView = UIStackView(arrangedSubviews: [l1, l2])
         stackView.axis = .horizontal
         view.addSubview(stackView)
         stackView.snp.makeConstraints { (make: ConstraintMaker) in
@@ -42,7 +42,7 @@ class ViewController: BaseViewController {
         }
         
         // MARK: Distribution
-        let disTitles = OAStackViewDistribution.all.map{ $0.title }
+        let disTitles = UIStackViewDistribution.all.map{ $0.title }
         let disSegment = UISegmentedControl(items: disTitles)
         disSegment.selectedSegmentIndex = 0
         view.addSubview(disSegment)
@@ -51,8 +51,8 @@ class ViewController: BaseViewController {
             make.height.equalTo(44)
         }
         disSegment.rx.value
-            .map(OAStackViewDistribution.init(rawValue:))
-            .bind(onNext: { (dis: OAStackViewDistribution?) in
+            .map(UIStackViewDistribution.init(rawValue:))
+            .bind(onNext: { (dis: UIStackViewDistribution?) in
                 guard let dis = dis else {
                     return
                 }
@@ -69,7 +69,7 @@ class ViewController: BaseViewController {
         }
         
         // MARK: Alignment
-        let alignTitles = OAStackViewAlignment.all.map{ $0.title }
+        let alignTitles = UIStackViewAlignment.all.map{ $0.title }
         let alignSegment = UISegmentedControl(items: alignTitles)
         alignSegment.selectedSegmentIndex = 0
         view.addSubview(alignSegment)
@@ -78,8 +78,8 @@ class ViewController: BaseViewController {
             make.bottom.equalTo(disLabel.snp.top)
         }
         alignSegment.rx.value
-            .map(OAStackViewAlignment.init(rawValue: ))
-            .bind { (align: OAStackViewAlignment?) in
+            .map(UIStackViewAlignment.init(rawValue: ))
+            .bind { (align: UIStackViewAlignment?) in
                 guard let align = align else {
                     return
                 }
@@ -98,7 +98,7 @@ class ViewController: BaseViewController {
     
 }
 
-fileprivate extension OAStackViewDistribution {
+fileprivate extension UIStackViewDistribution {
     
     var title: String {
         switch self {
@@ -115,7 +115,7 @@ fileprivate extension OAStackViewDistribution {
         }
     }
     
-    static var all: [OAStackViewDistribution] {
+    static var all: [UIStackViewDistribution] {
         return [
             .fill,
             .fillEqually,
@@ -127,18 +127,18 @@ fileprivate extension OAStackViewDistribution {
     
 }
 
-fileprivate extension OAStackViewAlignment {
+fileprivate extension UIStackViewAlignment {
     
     var title: String {
         switch self {
-        case .baseline:
-            return "Baseline"
+        case .firstBaseline:
+            return "FirstBaseline"
+        case .lastBaseline:
+            return "LastBaseline"
         case .center:
             return "Center"
         case .fill:
             return "Fill"
-        case .firstBaseline:
-            return "FirstBaseline"
         case .leading:
             return "Leading"
         case .trailing:
@@ -146,12 +146,12 @@ fileprivate extension OAStackViewAlignment {
         }
     }
     
-    static var all: [OAStackViewAlignment] {
+    static var all: [UIStackViewAlignment] {
         return [
-            .baseline,
             .center,
             .fill,
             .firstBaseline,
+            .lastBaseline,
             .leading,
             .trailing
         ]

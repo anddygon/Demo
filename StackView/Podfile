@@ -6,7 +6,8 @@ target 'StackView' do
   use_frameworks!
 
   # Pods for StackView
-  pod 'OAStackView'
+#  pod 'OAStackView'
+  pod 'FDStackView'
   pod 'SnapKit'
   pod 'RxSwift'
   pod 'RxCocoa'
