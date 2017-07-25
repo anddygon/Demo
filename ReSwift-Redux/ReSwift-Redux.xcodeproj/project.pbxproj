@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		342964BAFE17411EF5371F92 /* Pods_ReSwift_Redux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F68106B89CB7C5729EB8BEB9 /* Pods_ReSwift_Redux.framework */; };
 		E171982A1F27421A00A1238D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17198291F27421A00A1238D /* AppDelegate.swift */; };
 		E171982C1F27421A00A1238D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171982B1F27421A00A1238D /* ViewController.swift */; };
-		E171982F1F27421A00A1238D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E171982D1F27421A00A1238D /* Main.storyboard */; };
 		E17198311F27421A00A1238D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E17198301F27421A00A1238D /* Assets.xcassets */; };
 		E17198341F27421A00A1238D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E17198321F27421A00A1238D /* LaunchScreen.storyboard */; };
+		E171983C1F27434100A1238D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171983B1F27434100A1238D /* BaseViewController.swift */; };
+		E171983E1F27456400A1238D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E171983D1F27456400A1238D /* AppState.swift */; };
+		E17198441F2745D400A1238D /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17198431F2745D400A1238D /* Actions.swift */; };
+		E17198461F2747DC00A1238D /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17198451F2747DC00A1238D /* Reducers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5AA0ACA2706103F0DAD3EC41 /* Pods-ReSwift-Redux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwift-Redux.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwift-Redux/Pods-ReSwift-Redux.release.xcconfig"; sourceTree = "<group>"; };
+		AB24F970A7DC862584044762 /* Pods-ReSwift-Redux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReSwift-Redux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReSwift-Redux/Pods-ReSwift-Redux.debug.xcconfig"; sourceTree = "<group>"; };
 		E17198261F27421A00A1238D /* ReSwift-Redux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ReSwift-Redux.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17198291F27421A00A1238D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E171982B1F27421A00A1238D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E171982E1F27421A00A1238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E17198301F27421A00A1238D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E17198331F27421A00A1238D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E17198351F27421A00A1238D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E171983B1F27434100A1238D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E171983D1F27456400A1238D /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		E17198431F2745D400A1238D /* Actions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
+		E17198451F2747DC00A1238D /* Reducers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
+		F68106B89CB7C5729EB8BEB9 /* Pods_ReSwift_Redux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReSwift_Redux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				342964BAFE17411EF5371F92 /* Pods_ReSwift_Redux.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ACA138EB037444DFFBE26751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB24F970A7DC862584044762 /* Pods-ReSwift-Redux.debug.xcconfig */,
+				5AA0ACA2706103F0DAD3EC41 /* Pods-ReSwift-Redux.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E171981D1F27421A00A1238D = {
 			isa = PBXGroup;
 			children = (
 				E17198281F27421A00A1238D /* ReSwift-Redux */,
 				E17198271F27421A00A1238D /* Products */,
+				ACA138EB037444DFFBE26751 /* Pods */,
+				FCC62D0B6A5BFB80F793668B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +76,57 @@
 		E17198281F27421A00A1238D /* ReSwift-Redux */ = {
 			isa = PBXGroup;
 			children = (
+				E17198411F2745A500A1238D /* Reducers */,
+				E17198401F27459F00A1238D /* Actions */,
+				E171983F1F27459900A1238D /* State */,
+				E17198421F2745B400A1238D /* Controllers */,
 				E17198291F27421A00A1238D /* AppDelegate.swift */,
-				E171982B1F27421A00A1238D /* ViewController.swift */,
-				E171982D1F27421A00A1238D /* Main.storyboard */,
 				E17198301F27421A00A1238D /* Assets.xcassets */,
 				E17198321F27421A00A1238D /* LaunchScreen.storyboard */,
 				E17198351F27421A00A1238D /* Info.plist */,
 			);
 			path = "ReSwift-Redux";
+			sourceTree = "<group>";
+		};
+		E171983F1F27459900A1238D /* State */ = {
+			isa = PBXGroup;
+			children = (
+				E171983D1F27456400A1238D /* AppState.swift */,
+			);
+			name = State;
+			sourceTree = "<group>";
+		};
+		E17198401F27459F00A1238D /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				E17198431F2745D400A1238D /* Actions.swift */,
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		E17198411F2745A500A1238D /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				E17198451F2747DC00A1238D /* Reducers.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		E17198421F2745B400A1238D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E171982B1F27421A00A1238D /* ViewController.swift */,
+				E171983B1F27434100A1238D /* BaseViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FCC62D0B6A5BFB80F793668B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F68106B89CB7C5729EB8BEB9 /* Pods_ReSwift_Redux.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E17198381F27421A00A1238D /* Build configuration list for PBXNativeTarget "ReSwift-Redux" */;
 			buildPhases = (
+				D42410F83A6DF20E42CF2782 /* [CP] Check Pods Manifest.lock */,
 				E17198221F27421A00A1238D /* Sources */,
 				E17198231F27421A00A1238D /* Frameworks */,
 				E17198241F27421A00A1238D /* Resources */,
+				642057175921EE4726E01601 /* [CP] Embed Pods Frameworks */,
+				2475D31EB3B625FE6133F344 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,33 +194,76 @@
 			files = (
 				E17198341F27421A00A1238D /* LaunchScreen.storyboard in Resources */,
 				E17198311F27421A00A1238D /* Assets.xcassets in Resources */,
-				E171982F1F27421A00A1238D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2475D31EB3B625FE6133F344 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwift-Redux/Pods-ReSwift-Redux-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		642057175921EE4726E01601 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReSwift-Redux/Pods-ReSwift-Redux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42410F83A6DF20E42CF2782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E17198221F27421A00A1238D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E17198461F2747DC00A1238D /* Reducers.swift in Sources */,
+				E17198441F2745D400A1238D /* Actions.swift in Sources */,
 				E171982C1F27421A00A1238D /* ViewController.swift in Sources */,
 				E171982A1F27421A00A1238D /* AppDelegate.swift in Sources */,
+				E171983C1F27434100A1238D /* BaseViewController.swift in Sources */,
+				E171983E1F27456400A1238D /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E171982D1F27421A00A1238D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E171982E1F27421A00A1238D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E17198321F27421A00A1238D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -259,6 +370,7 @@
 		};
 		E17198391F27421A00A1238D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB24F970A7DC862584044762 /* Pods-ReSwift-Redux.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 67GS2ZN438;
@@ -272,6 +384,7 @@
 		};
 		E171983A1F27421A00A1238D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AA0ACA2706103F0DAD3EC41 /* Pods-ReSwift-Redux.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 67GS2ZN438;
@@ -302,6 +415,7 @@
 				E171983A1F27421A00A1238D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
