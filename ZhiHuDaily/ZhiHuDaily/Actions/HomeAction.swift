@@ -11,3 +11,4 @@ import ReSwift
 struct HomeSelectedSegmentAction: Action {
     let index: Int
 }
+
