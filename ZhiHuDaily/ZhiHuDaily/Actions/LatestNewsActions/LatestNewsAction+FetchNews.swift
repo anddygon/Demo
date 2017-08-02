@@ -42,9 +42,3 @@ extension LatestNewsAction.FetchNews {
     }
     
 }
-
-extension DataResponse {
-    
-    
-    
-}

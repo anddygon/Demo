@@ -10,7 +10,17 @@ import UIKit
 import ReSwift
 import RxSwift
 
-let appStore: Store<AppState> = Store(reducer: appReducer, state: nil)
+let loggingMiddleware: Middleware<Any> = { dispatch, getState in
+    return { next in
+        return { action in
+            print("💖Action💖: \(action)")
+            return next(action)
+        }
+    }
+}
+let appStore: Store<AppState> = Store(reducer: appReducer(action: state:),
+                                      state: nil,
+                                      middleware: [loggingMiddleware])
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
